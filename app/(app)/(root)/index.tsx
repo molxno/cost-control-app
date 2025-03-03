@@ -1,18 +1,12 @@
-import { Text, View } from 'react-native';
+import { ThemedText } from "@/components/ThemedText";
+import { ThemedView } from "@/components/ThemedView";
 
-import { useSession } from '../../../context/auth';
-
-export default function Index() {
-    const { signOut } = useSession();
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text
-                onPress={() => {
-                    // The `app/(app)/_layout.tsx` will redirect to the sign-in screen.
-                    signOut();
-                }}>
-                Sign Out
-            </Text>
-        </View>
-    );
+export default function HomeScreen() {
+  return (
+    <ThemedView
+      style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+    >
+      <ThemedText>Home</ThemedText>
+    </ThemedView>
+  );
 }
