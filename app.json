@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d9f40db9-9fbf-47f9-820f-b3ae5007bd00"
+      }
+    },
+    "owner": "molxno.dev"
   }
 }
